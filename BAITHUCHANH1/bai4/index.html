@@ -1,207 +1,166 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Bai Tap 04 - Employee Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Bài tập 04</title>
 </head>
 <body>
 
-<div class="form-container">
-    <form action="#" method="post">
+    <form action="" method="POST">
         
         <fieldset>
-            <legend>Basic Info</legend>
+            <legend><b>Basic Info</b></legend>
             
-            <div class="form-group">
-                <label>Employee ID</label>
-                <div class="input-wrapper">
-                    <span class="readonly-text">9</span>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Last Name</label>
-                <div class="input-wrapper">
-                    <input type="text" value="Dodsworth">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>First Name</label>
-                <div class="input-wrapper">
-                    <input type="text" value="Anne">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Gender</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="gender" value="male"> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                    <label><input type="radio" name="gender" value="xxx"> XXX</label>
-                    <label><input type="radio" name="gender" value="zzz" checked> ZZZ</label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Title</label>
-                <div class="input-wrapper">
-                    <input type="text" value="Sales Representative">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Suffix</label>
-                <div class="input-wrapper">
-                    <input type="text" value="Ms.">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>BirthDate</label>
-                <div class="input-wrapper">
-                    <input type="text" value="1969-07-02 00:00:00">
-                    <span class="help-icon">(?)</span>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>HireDate</label>
-                <div class="input-wrapper">
-                    <input type="text" value="1994-11-15 00:00:00">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>SSN # (if applicable)</label>
-                <div class="input-wrapper">
-                    <input type="text">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Reports To</label>
-                <div class="input-wrapper">
-                    <select>
-                        <option>Buchanan</option>
-                        <option>Fuller</option>
-                    </select>
-                </div>
-            </div>
+            <table border="0" cellpadding="5">
+                <tr>
+                    <td width="150"><b>Employee ID</b></td>
+                    <td><input type = "text" size="50"></td> 
+                </tr>
+                <tr>
+                    <td><b>Last Name</b></td>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>First Name</b></td>
+                    <td><input type="text"size="50"></td>
+                </tr>
+                <tr>
+                    <td valign="top"><b>Gender</b></td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male<br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                        <input type="radio" name="gender" value="xxx"> XXX<br>
+                        <input type="radio" name="gender" value="zzz" ZZZ
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Title</b></td>
+                    <td><input type="text"size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>Suffix</b></td>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>BirthDate</b></td>
+                    <td>
+                        <input type="text" size="40">
+                        <small></small>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>HireDate</b></td>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>SSN # (if applicable)</b></td>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>Reports To</b></td>
+                    <td>
+                        <select>
+                            <option>-- Select --</option>
+                            <option selected>quan</option>
+                            <option>quan222</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
         </fieldset>
 
+        <br>
+
         <fieldset>
-            <legend>Contact Info</legend>
-            
-            <div class="form-group">
-                <label>Email</label>
-                <div class="input-wrapper">
-                    <input type="email" placeholder="name@example.com">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Address</label>
-                <div class="input-wrapper">
-                    <input type="text" value="7 Houndstooth Rd.">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>City</label>
-                <div class="input-wrapper">
-                    <input type="text" value="London">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Region</label>
-                <div class="input-wrapper">
-                    <input type="text">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Postal Code</label>
-                <div class="input-wrapper">
-                    <input type="text" value="WG2 7LT">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Country</label>
-                <div class="input-wrapper">
-                    <select>
-                        <option>Russian Federation</option>
-                        <option>UK</option>
-                        <option>USA</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>US Home Phone</label>
-                <div class="input-wrapper">
-                    <input type="text" value="(234)234-2342">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Photo</label>
-                <div class="input-wrapper">
-                    <input type="text" value="EmpID9.bmp">
-                </div>
-            </div>
+            <legend><b>Contact Info</b></legend>
+            <table border="0" cellpadding="5">
+                <tr>
+                    <td width="150"><b>Email</b></td>
+                    <td><input type="email" placeholder="msv@e.tlu.edu.vn" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>City</b></td>
+                    <td><input type="text"size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>Region</b></td>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>Postal Code</b></td>
+                    <td><input type="text" size="20"></td>
+                </tr>
+                <tr>
+                    <td><b>Country</b></td>
+                    <td>
+                        <select>
+                            <option selected>Vietnam</option>
+                            <option>Lao</option>
+                            <option>USA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>US Home Phone</b></td>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <td><b>Photo</b></td>
+                    <td><input type="text"size="50"></td>
+                </tr>
+            </table>
         </fieldset>
 
+        <br>
+
         <fieldset>
-            <legend>Optional Info</legend>
-            
-            <div class="form-group">
-                <label>Notes</label>
-                <div class="input-wrapper">
-                    <div class="toolbar">
-                        <span>B</span> <span>I</span> <span>U</span> | 
-                        <span>Align</span> | <span>List</span>
-                    </div>
-                    <textarea rows="4">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ</textarea>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Preferred Shift</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox"> Regular</label> <br>
-                    <label><input type="checkbox" checked> Gravy Yard</label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Active?</label>
-                <div class="input-wrapper">
-                    <input type="checkbox" checked>
-                </div>
-            </div>
-
-            <div class="form-group captcha-group">
-                <label>Are you human?</label>
-                <div class="captcha-box">
-                    <div class="captcha-text">TIDAWO</div>
-                    <span class="captcha-hint">Click to change</span>
-                    <input type="text" class="captcha-input">
-                </div>
-            </div>
-
-            <div class="form-actions">
-                <button type="submit" class="btn-submit">Submit</button>
-                <button type="button" class="btn-cancel">Cancel</button>
-            </div>
+            <legend><b>Optional Info</b></legend>
+            <table border="0" cellpadding="5">
+                <tr>
+                    <td width="150" valign="top"><b>Notes</b></td>
+                    <td>
+                        <button type="button">B</button>
+                        <button type="button"><i>I</i></button>
+                        <button type="button"><u>U</u></button>
+                        <button type="button">ABC</button>
+                        <br>
+                        <textarea rows="6" cols="52"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"><b>Preferred Shift</b></td>
+                    <td>
+                        <input type="checkbox" name="shift" value="regular"> Regular<br>
+                        <input type="checkbox" name="shift" value="gravy"
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Active?</b></td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h3>T I D A W O</h3>
+                        Are you human? <br>
+                        <input type="text" size="30"> <small>Click to change</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <br>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                    </td>
+                </tr>
+            </table>
         </fieldset>
 
     </form>
-</div>
 
 </body>
 </html>
