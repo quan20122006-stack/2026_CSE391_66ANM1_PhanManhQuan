@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bài Tập 05 web quan li </title>
+</head>
+<body bgcolor="#f0f2f5">
+
+    <table width="100%" bgcolor="#333333" cellpadding="10" border="0">
+        <tr>
+            <td width="20%">
+                <font color="white" size="4"><b>HR Management</b></font>
+            </td>
+            <td width="50%">
+                <font color="#aaaaaa">Home</font> &nbsp;&nbsp;
+                <font color="#aaaaaa">Contact</font>
+            </td>
+            <td align="right">
+                <form action="" style="margin: 0;">
+                    <input type="text" placeholder="Search..." size="30">
+                    <button type="button">Search</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table align="center" width="90%" bgcolor="white" cellpadding="15" border="0">
+        <tr>
+            <td>
+                <table width="100%" border="0">
+                    <tr>
+                        <td><h2>Employee</h2></td>
+                        <td align="right">
+                            <button type="button" style="cursor: pointer;">+ Add</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <hr color="#eeeeee">
+
+                <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                    <tr bgcolor="#f9f9f9">
+                        <th align="left">ID</th>
+                        <th align="left">Name</th>
+                        <th align="left">Email</th>
+                        <th align="left">Phone</th>
+                        <th align="left">Position</th>
+                        <th align="left">Action</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Fatima Beatriz</td>
+                        <td>Fatima.Beatriz@gmail.com</td>
+                        <td>0985674321</td>
+                        <td>Staff</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+                    
+                    <tr bgcolor="#fcfcfc">
+                        <td>2</td>
+                        <td>Gabriel Hanna</td>
+                        <td>Gabriel.Hanna@gmail.com</td>
+                        <td>0353674231</td>
+                        <td>Staff</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Charles Diya</td>
+                        <td>Charles.Diya@gmail.com</td>
+                        <td>0347658833</td>
+                        <td>Staff</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr bgcolor="#fcfcfc">
+                        <td>4</td>
+                        <td>Frank Lamdo</td>
+                        <td>Frank.Lamdo@gmail.com</td>
+                        <td>0975444768</td>
+                        <td>Manager</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Louis Tom</td>
+                        <td>Louis.Tom@gmail.com</td>
+                        <td>0789568223</td>
+                        <td>Staff</td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table align="center" width="60%" bgcolor="white" border="1" bordercolor="#cccccc" cellspacing="0" cellpadding="0">
+        <tr bgcolor="#2196F3">
+            <td padding="10">
+                <table width="100%" cellpadding="10">
+                    <tr>
+                        <td><font color="white" size="4"><b>New Employee</b></font></td>
+                        <td align="right"><font color="white">X</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 20px;">
+                <form action="" method="POST">
+                    <table width="100%" cellpadding="5" border="0">
+                        <tr>
+                            <td width="50%">
+                                Name<br>
+                                <input type="text" style="width: 95%;">
+                            </td>
+                            <td width="50%">
+                                Email<br>
+                                <input type="email" style="width: 95%;">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                Phone<br>
+                                <input type="text" style="width: 95%;">
+                            </td>
+                            <td>
+                                Position<br>
+                                <select style="width: 98%;">
+                                    <option>-- Select Position --</option>
+                                    <option>Staff</option>
+                                    <option>Manager</option>
+                                    <option>CEO</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Sex<br>
+                                <input type="radio" name="sex" value="male"> Male
+                                &nbsp;&nbsp;
+                                <input type="radio" name="sex" value="female"> Female
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="right">
+                                <br>
+                                <button type="button">Save</button>
+                                <button type="button">Cancel</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+</body>
+</html>
