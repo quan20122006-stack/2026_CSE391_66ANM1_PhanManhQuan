@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký tài khoản</title>
+    <style>
+        .error { color: red; font-size: 14px; display: block; }
+        #success { color: green; margin-top: 10px; font-weight: bold; }
+        form input { margin-bottom: 5px; display: block; }
+        label { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <form id="registerForm">
+        <input id="fullname" placeholder="Họ tên">
+        <span class="error" id="fullnameError"></span>
+
+        <input id="email" placeholder="Email">
+        <span class="error" id="emailError"></span>
+
+        <input id="phone" placeholder="SĐT">
+        <span class="error" id="phoneError"></span>
+
+        <input type="password" id="password" placeholder="Mật khẩu">
+        <span class="error" id="passError"></span>
+
+        <input type="password" id="confirm" placeholder="Xác nhận mật khẩu">
+        <span class="error" id="confirmError"></span>
+
+        <div>
+            <label><input type="radio" name="gender" value="nam">Nam</label>
+            <label><input type="radio" name="gender" value="nu">Nữ</label>
+        </div>
+        <span class="error" id="genderError"></span>
+
+        <label>
+            <input type="checkbox" id="terms"> Đồng ý điều khoản
+        </label>
+        <span class="error" id="termsError"></span>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+
+    <div id="success"></div>
+
+    <script src="bai2,1.js"></script>
+</body>
+</html>
