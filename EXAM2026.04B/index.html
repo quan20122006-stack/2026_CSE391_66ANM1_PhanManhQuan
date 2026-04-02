@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CLBPulse - Quản lý Câu lạc bộ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-navbar">
+        <div class="nav-brand">CLBPulse</div>
+        <div class="nav-menu">
+            <input type="text" placeholder="Tìm CLB..." class="nav-search">
+            <a href="#">Trang chủ</a>
+            <a href="#">Danh sách</a>
+            <a href="#">Thêm CLB</a>
+            <a href="#">Giới thiệu</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Câu lạc bộ Sinh viên</h1>
+    </header>
+
+    <div class="highlight-banner">
+        Màu sắc phân biệt từng nhóm hoạt động trên cổng CLB
+    </div>
+
+    <main>
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <input type="text" placeholder="Lọc thẻ CLB..." class="search-input">
+            </div>
+            <div class="toolbar-center">
+                <label>Bộ lọc: </label>
+                <select class="filter-select">
+                    <option value="all">Cho mọi loại hình</option>
+                    <option value="hoc-thuat">Học thuật</option>
+                    <option value="the-thao">Thể thao</option>
+                    <option value="nghe-thuat">Nghệ thuật</option>
+                </select>
+            </div>
+            <div class="toolbar-right">
+                <button id="btnOpenAdd" class="btn-primary">+ Thêm mới</button>
+            </div>
+        </div>
+
+        <div id="clubContainer" class="club-list">
+            </div>
+
+        <div id="popupOverlay" class="overlay">
+            <div class="popup">
+                <div class="popup-header">
+                    <h3>Thêm CLB mới</h3>
+                    <button type="button" id="btnClose" class="btn-close">&times;</button>
+                </div>
+                <form id="clubForm">
+                    <div class="form-group">
+                        <label>Tên CLB:</label>
+                        <input type="text" id="name" required placeholder="Nhập tên câu lạc bộ...">
+                    </div>
+                    <div class="form-group">
+                        <label>Chủ nhiệm:</label>
+                        <input type="text" id="president" required placeholder="Họ và tên chủ nhiệm...">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" id="email" required placeholder="Email liên hệ...">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại:</label>
+                        <input type="text" id="phone" required placeholder="Ví dụ: 0912345678">
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày thành lập:</label>
+                        <input type="date" id="establishDate" required>
+                    </div>
+                    <div class="popup-footer">
+                        <button type="submit" class="btn-success">Lưu</button>
+                        <button type="button" id="btnCancel" class="btn-secondary">Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">CLBPulse</div>
+        <div class="footer-right">Mã sinh viên: 245127115- - Lớp: 66ANM1 - Thi: Lập trình Web</div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    background-color: #f4f6f9; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+/* Thanh điều hướng mới (Navbar) */
+.top-navbar {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.nav-brand { font-size: 22px; font-weight: bold; color: #0d6efd; }
+.nav-menu { display: flex; align-items: center; gap: 20px; }
+.nav-menu a { color: white; text-decoration: none; font-size: 15px; }
+.nav-menu a:hover { color: #0d6efd; }
+.nav-search { padding: 6px 12px; border-radius: 4px; border: none; outline: none; }
+
+/* Tách biệt Header và Banner */
+.page-header { 
+    background-color: #212529; 
+    color: white; 
+    padding: 15px 30px; 
+    margin-bottom: 10px; /* Tạo khoảng trống tách biệt */
+}
+.page-header h1 { margin: 0; font-size: 24px; }
+
+.highlight-banner {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 20px; /* Tạo khoảng trống với phần dưới */
+}
+
+main { 
+    max-width: 1200px; /* Mở rộng xíu để chứa vừa 3 cột đẹp hơn */
+    margin: 0 auto 20px auto; 
+    flex: 1; 
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 0 20px;
+}
+
+/* Toolbar */
+.toolbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    background: white; 
+    padding: 15px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border-radius: 8px;
+}
+
+.search-input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 220px; }
+.filter-select { padding: 8px; border: 1px solid #ccc; border-radius: 4px; outline: none; }
+
+button { cursor: pointer; padding: 8px 16px; border: none; border-radius: 4px; color: white; font-weight: bold; }
+.btn-primary { background-color: #0d6efd; }
+.btn-success { background-color: #198754; }
+.btn-secondary { background-color: #6c757d; }
+.btn-close { background: none; color: white; font-size: 20px; padding: 0; }
+
+/* CHUYỂN SANG BỐ CỤC LƯỚI (GRID) 3 CỘT */
+.club-list { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
+    gap: 20px; 
+}
+
+.club-card {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #0d6efd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 4px;
+}
+
+.club-card h3 { margin: 0 0 10px 0; color: #0d6efd; font-size: 18px; }
+.club-card p { margin: 5px 0; color: #333; font-size: 14px; }
+.club-card strong { color: #555; display: inline-block; width: 120px; }
+
+/* Popup form */
+.overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 1000; }
+.popup { background: white; width: 450px; border-radius: 8px; overflow: hidden; }
+.popup-header { background: #0d6efd; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+.popup-header h3 { margin: 0; }
+.form-group { padding: 10px 15px; display: flex; flex-direction: column; gap: 5px; }
+.form-group input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+.popup-footer { padding: 15px; text-align: right; border-top: 1px solid #eee; margin-top: 5px; }
+
+/* Chân trang */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
